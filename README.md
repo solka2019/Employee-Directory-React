@@ -20,4 +20,4 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 ![Employee Directory](./public/img/webpage.PNG)
 
 ## Github page
-
+https://github.com/solka2019/Employee-Directory-React
