@@ -23,4 +23,4 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 
 https://github.com/solka2019/Employee-Directory-React
 
-https://solka2019.github.io/Employee-Directory-React/.
+https://solka2019.github.io/Employee-Directory-React/
