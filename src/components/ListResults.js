@@ -38,7 +38,7 @@ class ListResults extends Component {
     console.log("***in Filter*******");
     console.log(searchkey);
     console.log(this.state.result);
-    var filterResult = this.state.result.filter(person => person.lastName === searchkey)
+    var filterResult = this.state.result.filter(person => person.lastName.toLowerCase().includes(searchkey.toLowerCase()));
 
     this.setState({
       result:filterResult
