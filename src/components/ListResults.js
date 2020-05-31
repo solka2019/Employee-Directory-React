@@ -26,7 +26,7 @@ class ListResults extends Component {
             phone: e.phone,
             key: i,
             picture: e.picture.medium
-          }))
+          })).sort( (a,b) => (a.lastName > b.lastName) ? 1:-1)
 
         })
      
@@ -40,6 +40,10 @@ class ListResults extends Component {
     console.log(this.state.result);
     var filterResult = this.state.result.filter(person => person.lastName.toLowerCase().includes(searchkey.toLowerCase()));
 
+    // https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/
+    // First sort firstname
+    filterResult.sort((a, b) => (a.firstName > b.firstName) ? 1 : -1);
+    
     this.setState({
       result:filterResult
       
